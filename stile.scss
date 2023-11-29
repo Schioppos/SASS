@@ -1,0 +1,77 @@
+@import "spaziature";
+@import "mixins";
+@import "colori";
+@import "font";
+@import "animazioni";
+
+.contenitoreGrande, header{
+    background-color: $coloreSfondo
+}
+
+nav{
+    @include spaziature;
+}
+ul{
+    display: $display;
+}
+ul li{
+    padding: $liPadding;
+    font-size: $pGrandezza;
+    color: $coloreTesto
+}
+
+.contenitoreGrande{
+    @include allineamento1contenitore;
+}
+h2{
+    font-size: $grandezzaH2;
+    padding-bottom: $Padding;
+    font-weight: $h2Doppio;
+}
+p{
+    font-size: $pGrandezza;
+    padding-bottom: $Padding;
+}
+
+.contenitore1 button:nth-of-type(1){
+ background-color: $coloreBottoneBlu;
+ padding: $paddingBottoni;
+}
+.contenitore1 button:nth-of-type(2){
+    background-color: $coloreBottoneGiallo;
+    padding: $paddingBottoni;
+}
+.contenitore1 button:nth-of-type(3){
+    background-color: $coloreBottoneVerde;
+    padding: $paddingBottoni;
+}
+
+h1{
+    font-size: $h1grandezza;
+}
+button{
+    border-radius: $smussaturaBordi;
+    color: $coloreTesto;
+}
+
+.contenitore2 img{
+    border-radius: $smussaturaBordi;
+    transform: $spostaImmagine;
+    height: $heightImmagine;
+    width: $width2;
+}
+
+.contenitoreFinale{
+    @include ultimoContenitore;
+}
+
+.contenitoreFinale img{
+    border-radius: $smussaturaBordi;
+    width: $width;
+}
+
+@include animaz;
+
+body{
+    animation: $animazioni;
+}

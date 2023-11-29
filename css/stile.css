@@ -1,0 +1,91 @@
+.contenitoreGrande, header {
+  background-color: #640fc5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  padding: 3px;
+  font-size: 1.5em;
+  color: #f4f4f4;
+}
+
+.contenitoreGrande {
+  display: flex;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 3em;
+  padding-bottom: 55px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5em;
+  padding-bottom: 55px;
+}
+
+.contenitore1 button:nth-of-type(1) {
+  background-color: #0e6cff;
+  padding: 20px;
+}
+
+.contenitore1 button:nth-of-type(2) {
+  background-color: #ff8700;
+  padding: 20px;
+}
+
+.contenitore1 button:nth-of-type(3) {
+  background-color: #4caf50;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+button {
+  border-radius: 10px;
+  color: #f4f4f4;
+}
+
+.contenitore2 img {
+  border-radius: 10px;
+  transform: translateY(120px);
+  height: 650px;
+  width: 100%;
+}
+
+.contenitoreFinale {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contenitoreFinale img {
+  border-radius: 10px;
+  width: 24%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  animation: fadeIn 1s;
+}/*# sourceMappingURL=stile.css.map */

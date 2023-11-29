@@ -1,0 +1,28 @@
+@mixin spaziature {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+@mixin allineamento1contenitore{
+    display: flex;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+@mixin ultimoContenitore{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+@mixin animaz{
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+}
